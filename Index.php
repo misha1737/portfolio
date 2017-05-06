@@ -3,7 +3,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kozlov Misha</title>
+    <title>Kozlov Mishaаааф</title>
     <link rel="stylesheet" href="stile.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
