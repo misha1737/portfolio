@@ -79,13 +79,11 @@ position: absolute;
 clip: rect(0, 0, 0, 0);
 }
 
-
 .aboutMe{
 position:relative;
 margin:auto;
-!margin-top:-200px;
-max-width:1280px;
 width:100%;
+max-width:1280px;
 height:auto;
 !max-height: 960px;
 
@@ -141,11 +139,10 @@ margin-left:50%;
 color: #fff;
 font-family: 'Noto Serif', serif;
 font-style:italic;
-max-height:999999px;
 }
 
 .aboutMe img{
-
+!max-width: 400px;
 width:30%;
 margin-top:120px;
 !margin-bottom:500px;
@@ -158,10 +155,10 @@ box-shadow: 0 3px 10px black;
 
 .content .background{
 position:absolute;
-margin-top:-45vh;
-width:100%;
+!margin-top:-45vh;
+!width:100%;
 z-index:-5;
-height:170vh;
+!height:170vh;
 min-height:700px;
 min-width:100vw;
 background:url(img/background.jpg) no-repeat top left;
@@ -258,7 +255,6 @@ margin:auto;
 margin-top:100px;
 max-width:900px;
 width:100%;
-
 }
 
 
@@ -271,6 +267,13 @@ background:rgba(255,255,255, 0.5 );
 border-radius:40px;
 box-shadow: 0px 0px 30px black;
 }
+
+.resume p, .resume ul{
+color:#000;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
 
 .profesionalSkills{
 
@@ -425,53 +428,33 @@ background:url(img/vk.png) no-repeat center;
 background-size: cover;
 }
 
-@media all and (orientation: portrait) and (max-width: 970px) {
+
+@media all and (orientation: portrait){
+
+	header
+	{
+	height:128px;
+	}
+
+
 	.logo{
-	margin-left:1%;
+	margin:16px 16px;
+	width:96px;
+	height:96px;
 	}
 
 	header h2{
-	margin-left:5px;
+	margin:0;
+	margin-left:20px;
+	padding: 32px 0;
+
+	line-height:64px;
+	font-size:64px;
 	}
 
-	nav ul{
-	margin-right:1%;
-	}
-
-	nav li{
-	margin-left:5px;
-	}
-
-	h1{
-	font-size:36px;
-	line-height:36px;
-	padding-top:0px;
-	}
-
-	.aboutMe h2{
-	!width:50%;
-	font-size:24px;
-	line-height:24px;
-	padding-top:0px;
-	}
-
-	.content .background{
-
-	background-size:200vw;
-	}
-
-}
-
-
-
-
-
-@media all and (orientation: portrait)  and (max-width: 750px) {
 	nav a{
-	color:#aadbfb;
+	font-size:32px;
 	}
-
-
 
 	.nav-trigger:checked + label{
 	transition-property:opacity;
@@ -489,7 +472,266 @@ background-size: cover;
 	}
 
 	.nav-trigger:checked ~ ul{
-	transition-property:background;
+	transition-property:opacity;
+	transition-duration: 0.5s;
+	margin:0;
+	background:#000;
+	opacity:1;
+	width:100%;
+	z-index:-3;
+	}
+
+	label[for="nav-trigger"]{
+	transition-property:opacity;
+	transition-duration: 0.5s;
+	margin: 32px 32px;
+	float:right;
+	clear:right;
+	z-index: 2;
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+	background-image: url(menu.svg);
+	background-size:cover;
+	opacity:0.5;
+	}
+
+	h1{
+	font-size:72px;
+	}
+	.aboutMe h2{
+	font-size:40px;
+	}
+	.aboutMe p{
+	font-size:32px;
+	}
+	.aboutMe blockquote {
+	font-size:28px;
+	line-height:28px;
+	margin-left:20%;
+	}
+	.content .background{
+	height:170vh;
+	background-size:200vw;
+	}
+
+	.projectsContent h2{
+		font-size:72px;
+		line-height:72px;
+	}
+
+	.resume p, .resume li {
+		font-size:36px;
+		line-height:40px;
+	}
+	.resume h3{
+		font-size:42px;
+		line-height:42px;
+	}
+
+	.contacts div{
+		font-size:36px;
+		line-height:64px;
+		!margin-left: 64px;
+		width:100%;
+		display:block;
+		padding-left: 64px;
+	}
+	.contacts div div{
+		font-size:32px;
+		line-height:64px;
+		padding:16px;
+
+	}
+
+}
+
+@media all and (orientation: portrait) and (max-width: 970px) {
+	header
+	{
+	height:64px;
+	}
+
+
+	.logo{
+	margin:8px 8px;
+	width:48px;
+	height:48px;
+	}
+
+	header h2{
+	margin:0;
+	margin-left:20px;
+	padding: 8px 0;
+	line-height:48px;
+	font-size:48px;
+	}
+
+	nav a{
+	font-size:20px;
+	}
+
+
+	label[for="nav-trigger"]{
+		margin: 14px 8px;
+		width: 36px;
+		height: 36px;
+	}
+
+	h1{
+		margin: 0;
+		width:90%;
+		margin-left:5%;
+	font-size:56px;
+	}
+	.aboutMe h2{
+		margin-left:5%;
+		width:90%;
+	font-size:32px;
+	}
+	.aboutMe p{
+		margin-left:5%;
+		width:90%;
+	font-size:24px;
+	}
+	.aboutMe blockquote {
+		margin-left:5%;
+		width:50%;
+	font-size:22px;
+	line-height:22px;
+	margin-left:0;
+	}
+
+	.aboutMe img{
+	width:30%;
+	margin-top:160px;
+	display:block;
+	margin:0 35%;
+	margin-top:64px;
+	}
+
+	.content .background{
+	height:200vh;
+	background-size:250vw;
+	}
+
+	.projectsContent h2{
+		font-size:56px;
+		line-height:56px;
+	}
+
+	.resume p, .resume li {
+		font-size:26px;
+		line-height:36px;
+	}
+	.resume h3{
+		font-size:36px;
+		line-height:42px;
+	}
+
+	.contacts div{
+		font-size:36px;
+		line-height:64px;
+		!margin-left: 64px;
+		max-width:80%;
+		display:block;
+		padding: 0px;
+	}
+	.contacts div div{
+		font-size:32px;
+		line-height:64px;
+		padding:0px;
+
+	}
+
+}
+
+@media all and (max-width: 970px) {
+	.logo{
+	margin-left:1%;
+	}
+
+	header h2{
+	margin-left:5px;
+	}
+
+	nav ul{
+	margin-right:1%;
+	}
+
+	nav li{
+	margin-left:5px;
+	}
+
+
+	h1{
+	font-size:36px;
+	line-height:36px;
+	padding-top:0px;
+	}
+
+	.aboutMe h2{
+	!width:50%;
+	font-size:24px;
+	line-height:24px;
+	padding-top:0px;
+	}
+
+	.content .background{
+	background-size:200vw;
+	}
+
+}
+
+
+@media all and (orientation: portrait) and (max-width: 750px) {
+	.content .background{
+	height:300vh;
+	background-size:300vw;
+	}
+.projects {
+	!height:400vh;
+	background-size:600vw;
+}
+
+	.contacts div{
+		font-size:24px;
+		line-height:24px;
+		max-width:80%;
+		display:block;
+		padding: 0px;
+	}
+	.contacts div div{
+		font-size:32px;
+		line-height:64px;
+		padding:0px;
+
+	}
+
+}
+
+
+@media all  and (max-width: 750px) {
+	nav a{
+	color:#aadbfb;
+	}
+
+	.nav-trigger:checked + label{
+	transition-property:opacity;
+	transition-duration: 0.5s;
+	opacity:1;
+	}
+
+	nav ul{
+	margin:0;
+	transition-property:all;
+	transition-duration: 0.5s;
+	width:100%;
+	text-align:center;
+	opacity:0;
+	}
+
+	.nav-trigger:checked ~ ul{
 	transition-property:opacity;
 	transition-duration: 0.5s;
 	margin:0;
@@ -536,6 +778,15 @@ background-size: cover;
 }
 
 @media all and (orientation: portrait) and (max-width: 500px) {
+
+	header h2{
+	margin:0;
+	margin-left:20px;
+	padding: 8px 0;
+	line-height:48px;
+	font-size:26px;
+	}
+
 	nav ul{
 	text-align:left;
 	padding: 0;
@@ -545,56 +796,37 @@ background-size: cover;
 	display:block;
 	}
 	h1{
-	font-size:24px;
-	line-height:24px;
+	font-size:36px;
+	line-height:40px;
 	!padding-top:20vh;
 	}
+	.content .background{
+	height:300vh;
+	background-size:500vw;
+	}
+
+	.projects {
+		background-size:800vw;
+	}
+
 	.aboutMe h2{
-	font-size:18px;
-	line-height:18px;
+	font-size:28px;
+	line-height:28px;
 	margin-top:0;
-	!padding-top:20vh;
 	}
-	.aboutMe img{
-	!width:150px;
-	}
+
 	.aboutMe p{
 	margin-top:20px;
 	}
 
 	.aboutMe blockquote {
-	margin-left:0px;
+	margin-left:30%;
 	}
 
-}
-@media all and (orientation: portrait) {
-
-.content .background{
-
-margin-top:0;
-
-
-height:100vw;
-background-position:left;
-background-size:200vh;
-}
-
-h1{
-font-size:48px;
-line-height:48px;
-!padding-top:20vh;
-}
-.aboutMe h2{
-font-size:26px;
-line-height:26px;
-margin-top:0;
-!padding-top:20vh;
-}
-
-.aboutMe p{
-	font-size:24px;
-	line-height:24px;
-
+	.contacts div div{
+		font-size:24px;
+		line-height:64px;
+		padding:0px;
 }
 
  }
