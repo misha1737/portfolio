@@ -77,8 +77,8 @@
       </p>
 			<h3>Професійні навички:</h3>
 			<p>Професійне володіння: Adobe Photoshop, Adobe InDesign,Adobe Illustrator, 3ds Max.<br>
-			Впевнене володіння: HTML5, CSS3, JS, досвід кросбраузерної і адаптивної верстки.<br>
-			На етапі вивчення: jQuery, sass, cms WordPress, Git.<br>
+			Впевнене володіння: HTML5, CSS3, JS, GIT, досвід кросбраузерної і адаптивної верстки.<br>
+			На етапі вивчення: jQuery, sass, cms WordPress.<br>
 			Знання основ: PHP, MySQL, C++, Java;<br></p>
 			<img src="img/html.jpg" alt="Photo">
 					<img src="img/css.jpg" alt="Photo">
