@@ -35,7 +35,7 @@
 			<h1>Козлов Михайло</h1>
 			<h2>Офіційний веб сайт</h2>
 			<p>	Мені 24 роки. Я займаюся розробкою веб сайтів та дизайном.
-			Мені приносить задоволення створення красивих та корисних речей, отриманя досвіду та вдосконалення своїх навиків.
+			Мені приносить задоволення створення красивих та корисних речей, отримання досвіду та вдосконалення своїх навичок.
 			Мій темперамент найбільш наближений до флегматичного, тому мені притаманна висока працездатність, завзятість і наполегливість в роботі</p>
 			<blockquote>
 			Краща робота – це високооплачуване хобі.<br>
@@ -48,7 +48,8 @@
 				<a href="http://mishakozlov.kl.com.ua/site1/index.html" class="site1"><p>HTML CSS<br>Static site</p></a>
 				<a href="http://mishakozlov.kl.com.ua/site2/index.html" class="site2"><p>HTML CSS JS<br>Static site </p></a>
 				<a href="http://mishakozlov.kl.com.ua/site3/index.html" class="site3"><p>HTML CSS JS <br> Adaptive Web Design</p></a>
-				<h2>Ігра</h2>
+				<a href="http://mishakozlov.kl.com.ua/site4/index.html" class="site4"><p>bootstrap<br> Adaptive Web Design</p></a>
+				<h2>Гра</h2>
 				<a href="http://mishakozlov.kl.com.ua/snake/" class="game1"><p>HTML CSS JS PHP</p></a>
 			</div>
 		</div>
